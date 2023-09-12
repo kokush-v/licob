@@ -1,0 +1,32 @@
+.card-container {
+	border-top: none;
+	height: 90vh;
+	border-width: 5px;
+	border-color: #2b2d31;
+	border-right: none;
+
+	.wrapper {
+		margin: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+	}
+
+	overflow-y: auto;
+	&::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		background-color: #2b2d31;
+	}
+
+	&::-webkit-scrollbar {
+		width: 5px;
+		background-color: #2b2d31;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		background-color: #6d6d6d;
+	}
+}

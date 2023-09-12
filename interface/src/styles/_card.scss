@@ -1,0 +1,115 @@
+.card {
+	font-family: "Roboto Mono", monospace;
+
+	border-left: 2px rgb(144, 100, 155) solid;
+	background-color: #2b2d31ff;
+	height: fit-content;
+	min-width: 700px;
+	border-radius: 10px;
+	.title {
+		height: 100%;
+		height: fit-content;
+		width: 100%;
+		padding: 1em;
+		border-bottom: 2px rgb(144, 100, 155) solid;
+	}
+	.content {
+		margin: 1em;
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		padding: 0.2em 2em;
+
+		.picks {
+			position: relative;
+			height: 190px;
+			width: 100%;
+			border-radius: 5px;
+
+			font-size: larger;
+
+			border-left: 2px #4e5058ff solid;
+			background-color: rgba(46, 31, 52, 0.295);
+			box-shadow: #4e5058ff 4px 4px 0 0;
+
+			overflow-y: auto;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: stretch;
+
+			ul {
+				height: 100%;
+				li {
+					width: 100%;
+					p {
+						margin: 1em 2em;
+					}
+					&:nth-child(2n) {
+						background-color: rgb(36, 32, 42);
+					}
+				}
+			}
+			&::-webkit-scrollbar-track {
+				-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+				background-color: #7979796e;
+			}
+
+			&::-webkit-scrollbar {
+				width: 2px;
+				background-color: #2b2d3168;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+				background-color: #2e29298e;
+			}
+		}
+	}
+	input[type="button"] {
+		width: 200px;
+		background-color: #dd85f6;
+		border: 2px solid #410042;
+		border-radius: 30px;
+		box-shadow: #3a0042 4px 4px 0 0;
+		color: #000000;
+		cursor: pointer;
+		display: block;
+		font-weight: 600;
+		font-size: 18px;
+		padding: 0 18px;
+		line-height: 50px;
+		text-align: center;
+		text-decoration: none;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+
+		&:hover {
+			background-color: #ff00ff;
+		}
+
+		&:active {
+			box-shadow: #330042 2px 2px 0 0;
+			transform: translate(2px, 2px);
+		}
+
+		@media (min-width: 768px) {
+			.button-74 {
+				min-width: 120px;
+				padding: 0 25px;
+			}
+		}
+	}
+	.winner {
+		padding: 0.2em 2em;
+		border-radius: 5px;
+		background-color: #dd85f6;
+		border: 2px solid #410042;
+		box-shadow: #3a0042 4px 4px 0 0;
+		color: #000000;
+	}
+}
